@@ -1,0 +1,9 @@
+mediamtx.exe
+*.zip
+dist/
+build/
+*.spec
+__pycache__/
+settings.json
+auto.crt
+auto.key

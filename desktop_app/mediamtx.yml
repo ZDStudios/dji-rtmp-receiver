@@ -1,0 +1,36 @@
+# Minimal MediaMTX config: RTMP in (port 1935), WebRTC out (port 8889).
+logLevel: info
+logDestinations: [stdout]
+
+authMethod: internal
+authInternalUsers:
+  - user: any
+    pass:
+    ips: []
+    permissions:
+      - action: publish
+      - action: read
+  - user: any
+    pass:
+    ips: ["127.0.0.1", "::1"]
+    permissions:
+      - action: api
+
+api: true
+apiAddress: 127.0.0.1:9997
+
+rtmp: true
+rtmpEncryption: "no"
+rtmpAddress: :1935
+
+webrtc: true
+webrtcAddress: :8889
+webrtcLocalUDPAddress: :8189
+webrtcAllowOrigins: ["*"]
+
+rtsp: false
+hls: false
+srt: false
+
+paths:
+  all_others:
