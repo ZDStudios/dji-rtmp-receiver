@@ -115,6 +115,7 @@ PAGE = r"""<!doctype html>
 <style>
   :root { --bg:#0f1215; --card:#181d23; --muted:#8a939e; --accent:#4fd1ff; --ok:#3ddc84; --bad:#e5534b; }
   * { box-sizing:border-box; }
+  [hidden] { display:none !important; }
   body { margin:0; background:var(--bg); color:#e8ecf0; font:15px/1.4 system-ui,Segoe UI,sans-serif; }
   main { max-width:1100px; margin:0 auto; padding:24px 16px; display:grid; gap:16px;
          grid-template-columns: 360px 1fr; }

@@ -1,6 +1,18 @@
+<p align="center"><img src="docs/icon.png" width="96" alt="App icon"></p>
+
 # DJI RTMP Stream Receiver
 
 Two ways to receive your DJI controller's live feed over home wifi (RTMP in, low-latency WebRTC out, via MediaMTX).
+
+## Screenshots
+
+**Desktop app** - shows the address and key to enter on the controller, with lights for the server and the incoming stream:
+
+<img src="docs/desktop-app.png" width="480" alt="Desktop app with server running and stream live">
+
+**Web dashboard** - same info plus the live video in the page (shown here with an ffmpeg test pattern):
+
+<img src="docs/web-dashboard.jpg" width="720" alt="Web dashboard playing a live test stream">
 
 ## In the DJI app (both versions)
 Live Streaming -> **RTMP** (custom) and enter:
